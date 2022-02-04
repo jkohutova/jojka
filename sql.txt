@@ -1,0 +1,3 @@
+CREATE DATABASE databaze_pro_web
+CREATE USER 'pouzivatel'@'%' IDENTIFIED VIA mysql_native_password USING 'cibula';GRANT ALL PRIVILEGES ON *.* TO 'pouzivatel'@'%' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `pouzivatel\_%`.* TO 'pouzivatel'@'%';
+CREATE TABLE `databaze_pro_web`.`znacka` ( `znacka_id` INT NOT NULL AUTO_INCREMENT , `nazov` VARCHAR(60) NOT NULL , `logo` VARCHAR(60) NULL , PRIMARY KEY (`znacka_id`), UNIQUE (`nazov`)) ENGINE = InnoDB;
