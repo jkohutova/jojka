@@ -1,1 +1,1 @@
-idem skusit gitovat
+uvidim, ci to ide
